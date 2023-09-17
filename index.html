@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Quotex broker is an innovative platform with up to 98% return on every investment! Sign up for a demo account to practice with $10,000. With a minimum deposit of just $10, this is a great choice!"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Quotex: An innovative platform for online investment</title>
+    <style type="text/css">
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #1c1f2d;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      h2 {
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 30px;
+      }
+      .container {
+        max-width: 1244px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+      .header {
+        position: sticky;
+        top: 0;
+        background-color: #1c1f2d;
+        z-index: 10;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .header__inner {
+        display: flex;
+        align-items: center;
+        padding: 16px 0px;
+        position: relative;
+      }
+      .menu-burger__input,
+      .menu-burger__label {
+        display: none;
+      }
+      .menu__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+      }
+      .menu__link {
+        font-size: 16px;
+        font-weight: 400;
+        color: #d0d2d7;
+        width: fit-content;
+      }
+      .menu__link:hover {
+        color: #4a8ded;
+      }
+      .menu__item + .menu__item {
+        margin-left: 48px;
+      }
+      .logo {
+        z-index: 11;
+      }
+      .header__btn-box {
+        margin-left: auto;
+      }
+      .log-in {
+        display: inline-block;
+        background: #444b5d;
+        border-radius: 8px;
+        padding: 18px 34px 19px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        margin-right: 10px;
+        color: #fff;
+      }
+      .log-in:hover {
+        background: #474c5d;
+      }
+      .registration {
+        display: inline-block;
+        padding: 18px 39px 19px;
+        color: #fff;
+        background: #35b972;
+        box-shadow: 0 4px 10px rgba(53, 184, 114, 0.25);
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .registration:hover {
+        background-color: #4fd38c;
+      }
+      .main {
+        width: 100%;
+        background: url('images/platform-bg.webp');
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: cover;
+      }
+      .main__inner {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+      }
+      .main__item {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: center;
+      }
+      .main__title {
+        font-size: 42px;
+        line-height: 120%;
+        text-align: left;
+      }
+      .main__subtitle {
+        text-align: left;
+        font-size: 32px;
+        line-height: 120%;
+        margin: 20px 0;
+      }
+      .main__text {
+        font-size: 24px;
+        line-height: 120%;
+        opacity: 0.6;
+        margin-bottom: 50px;
+      }
+      .main__btn-box {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 5px;
+      }
+      .main-registration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 22px 32px;
+        color: #fff;
+        background: #35b972;
+        box-shadow: 0 4px 10px rgba(53, 184, 114, 0.25);
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 235px;
+        width: 100%;
+      }
+      .main-registration:hover {
+        background-color: #4fd38c;
+      }
+      .account {
+        max-width: 240px;
+        width: 100%;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #fff;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #353a4d;
+      }
+      .account:hover {
+        background: linear-gradient(0deg, #686f86, #686f86), #fff;
+        color: #fff !important;
+      }
+      .main__dignity {
+        max-width: 1224px;
+        width: 100%;
+        margin: 0 auto 44px;
+        background-color: rgba(53, 58, 77, 0.8);
+        border-radius: 8px;
+        padding-bottom: 32px;
+      }
+      .main__dignity-inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 37px 32px 38px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        margin-bottom: 32px;
+      }
+      .main__dignity-item {
+        max-width: 235px;
+        width: 100%;
+        color: #fff;
+      }
+      .main__dignity-img {
+        display: block;
+        margin-bottom: 27px;
+      }
+      .main__dignity-title {
+        margin-bottom: 17px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .main__dignity-text {
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .main__dignity-link {
+        max-width: 320px;
+        width: calc(100% - 32px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0;
+        margin: 0 auto;
+        background: #35b972;
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(53, 184, 114, 0.25);
+      }
+      .main__dignity-link svg {
+        margin-left: 10px;
+      }
+      .main__dignity-link:hover {
+        background: #4fd38c;
+      }
+      .main__graph-subtext {
+        font-size: 24px;
+        line-height: 40px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .main__graph-inner {
+        display: flex;
+        justify-content: space-between;
+      }
+      .main__graph-container {
+        text-align: center;
+        max-width: 275px;
+        width: 100%;
+        min-height: 440px;
+        padding: 38px 16px;
+        background: #353a4d;
+        border-radius: 8px;
+        margin-left: 60px;
+      }
+      .main__graph-title {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 31px;
+        margin-top: 30px;
+        margin-bottom: 4px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-shadow: 0 64px 54px rgba(0, 0, 0, 0.25);
+      }
+      .main__graph-text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        text-shadow: 0 64px 54px rgba(0, 0, 0, 0.25);
+      }
+      .main__graph-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 36px;
+        border-radius: 8px;
+        margin-top: 24px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        color: #fff;
+      }
+      .main__graph-btn svg {
+        margin-left: 7px;
+      }
+      .main__graph-btn--green {
+        background: #35b972;
+        box-shadow: 0 4px 10px rgba(53, 184, 114, 0.25);
+      }
+      .main__graph-btn--green svg {
+        transform: rotate(-90deg);
+      }
+      .main__graph-btn--green:hover {
+        background: #4fd38c;
+      }
+      .main__graph-btn--red svg {
+        transform: rotate(90deg);
+      }
+      .main__graph-btn--red {
+        background: #e26e61;
+        box-shadow: 0 4px 10px rgba(255, 82, 82, 0.25);
+      }
+      .main__graph-btn--red:hover {
+        background: #f3887c;
+      }
+      .main__appendix {
+        width: 100%;
+        background-image: url('images/appendix-bg.webp');
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: auto;
+      }
+      .main__appendix-inner {
+        display: flex;
+      }
+      .main__appendix-img {
+        transform: translateX(-200px);
+      }
+      .main__appendix-box {
+        padding-top: 135px;
+        max-width: 450px;
+        width: 100%;
+        transform: translateX(-200px);
+      }
+      .main__appendix-text {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 48px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .main__appendix-link {
+        display: inline-block;
+        max-width: 300px;
+        width: 100%;
+        color: #fff;
+        padding: 17px 0 17px 100px;
+        background: #262b3c;
+        border-radius: 8px;
+        position: relative;
+      }
+      .main__appendix-link::before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        left: 25px;
+        width: 60px;
+        height: 60px;
+        background-image: url('images/google-play.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .main__appendix-link:hover {
+        background-color: #026fd3;
+      }
+      .main__appendix-small {
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 21px;
+        opacity: 0.4;
+      }
+      .main__appendix-big {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 21px;
+        opacity: 0.8;
+      }
+      .main__start-subtext {
+        margin-bottom: 33px;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .main__start-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .main__start-item {
+        position: relative;
+        width: 288px;
+        padding: 13px 25px 56px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .main__start-img {
+        margin: 0 auto 31px auto;
+      }
+      .main__start-title {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .main__start-text {
+        margin-bottom: 24px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .main__start-link {
+        position: absolute;
+        bottom: 0;
+        max-width: 238px;
+        width: 100%;
+        text-align: center;
+        color: #2b99ff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        background: rgba(53, 58, 77, 0.8);
+        border-radius: 8px;
+        padding: 10px 40px;
+      }
+      .questions {
+        padding: 65px 0 55px;
+      }
+      .questions__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .questions__box {
+        width: 50%;
+      }
+      .questions__item {
+        position: relative;
+        padding: 16px 25px;
+        margin-bottom: 18px;
+        background: rgba(53, 58, 77, 0.8);
+        border-radius: 8px;
+        width: 100%;
+      }
+      .questions__item + .questions__item {
+        margin-top: 15px;
+      }
+      .questions__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      .questions__label {
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        background: transparent;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        padding-right: 25px;
+      }
+      .questions__label::after,
+      .questions__label::before {
+        content: '';
+        position: absolute;
+        background-color: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 10px;
+        width: 1.5px;
+        transition: all 0.5s;
+      }
+      .questions__label::after {
+        right: 0px;
+        transform: rotate(45deg);
+      }
+      .questions__label::before {
+        right: 7px;
+        transform: rotate(-45deg);
+      }
+      .questions__label img {
+        margin-right: 15px;
+      }
+      .questions__content {
+        padding: 16px 41px 0;
+        background: transparent;
+        display: block;
+        transition: opacity 0.3s ease, max-height 0.3s ease;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .questions__input:checked ~ .questions__label::after {
+        transform: rotate(135deg);
+      }
+      .questions__input:checked ~ .questions__label::before {
+        transform: rotate(-135deg);
+      }
+      .questions__input:checked ~ .questions__content {
+        display: none;
+      }
+      .main__questions-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        max-width: 456px;
+        width: 100%;
+        margin: 32px auto 0;
+        background: rgba(53, 58, 77, 0.8);
+        border-radius: 8px;
+        font-weight: 400;
+        color: #2b99ff;
+      }
+      .main__questions-btn svg {
+        margin-right: 10px;
+      }
+      .comments__item {
+        padding: 25px 20px 30px;
+        border-radius: 10px;
+        background: rgba(53, 58, 77, 0.8);
+        position: relative;
+      }
+      .comments__item + .comments__item {
+        margin-top: 40px;
+      }
+      .comments__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .comments__name {
+        font-weight: 700;
+        font-size: 17px;
+      }
+      .comments__star {
+        display: flex;
+        height: 16px;
+        width: 89px;
+        margin-bottom: 0.5rem;
+        background-image: url('images/rating.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 30px;
+      }
+      .comments__btn {
+        position: absolute;
+        bottom: -15px;
+        right: 3%;
+        background-color: #222d56;
+        border: none;
+        color: #fff;
+        padding: 7px 30px 6px;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background 0.5s;
+      }
+      .comments__btn:hover {
+        background-color: #211d45;
+      }
+      .main__innovation {
+        padding: 110px 0 100px;
+      }
+      .main__innovation-inner {
+        text-align: center;
+      }
+      .main__innovation-btn {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      .main__innovation-link {
+        width: 296px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+      }
+      .main__innovation-link svg {
+        margin-right: 10px;
+      }
+      .main__innovation-real {
+        margin-right: 22px;
+        background: #35b972;
+        box-shadow: 0 4px 10px rgba(53, 184, 114, 0.25);
+      }
+      .main__innovation-real:hover {
+        background: #4fd38c;
+      }
+      .main__innovation-demo {
+        color: #353a4d;
+        background: #fff;
+      }
+      .main__innovation-demo:hover {
+        background: linear-gradient(0deg, #686f86, #686f86), #fff;
+        color: #fff;
+      }
+      .footer {
+        padding: 50px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .footer__top {
+        padding: 25px 0 35px;
+        border-bottom: 1px solid #474f63;
+      }
+      .footer-logo {
+        display: inline-block;
+        margin-bottom: 70px;
+      }
+      .footer__nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .footer__list {
+        list-style: none;
+        padding: 0;
+        font-size: 12px;
+      }
+      .footer__list-item {
+        color: #7e859d;
+      }
+      .footer__list-link:hover {
+        color: #4a8ded;
+      }
+      .footer__list-item:first-child {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .footer__list-item + .footer__list-item {
+        margin-top: 6px;
+      }
+      .footer__bottom {
+        padding-top: 30px;
+      }
+      .footer__text {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #7e859d;
+        margin-bottom: 10px;
+      }
+      .footer__copyright {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #7e859d;
+        margin-top: 40px;
+      }
+      @media (max-width: 768px) {
+        .header__inner {
+          padding-left: 80px;
+        }
+        .menu__burger {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 70px;
+          height: 60px;
+          background-color: #161d37;
+          z-index: 11;
+        }
+        .menu-burger__input,
+        .menu-burger__label {
+          display: none;
+        }
+        .menu__list {
+          flex-direction: column;
+          padding: 0 0 0 0px;
+        }
+        .menu,
+        .menu-burger__label span {
+          left: 0;
+        }
+        .menu-burger__label {
+          cursor: pointer;
+        }
+        .menu {
+          position: absolute;
+          top: 0px;
+          left: -10px;
+          padding: 100px 8px 16px 8px;
+          width: 280px;
+          background-color: rgba(53, 58, 77, 0.8);
+          z-index: 10;
+          transform: translateX(-200%);
+          transition: all 0.5s;
+        }
+        .menu-burger__label span,
+        .menu-burger__label::after,
+        .menu-burger__label::before {
+          height: 2px;
+          border-radius: 2px;
+          background-color: #fff;
+          position: absolute;
+        }
+        .menu-burger__label span {
+          width: 100%;
+        }
+        .menu-burger__label::before {
+          width: 16px;
+        }
+        .menu-burger__label::after {
+          width: 19px;
+        }
+        .menu-burger__label,
+        .menu-burger__label span {
+          top: 50%;
+          transform: translateY(-50%);
+          display: block;
+        }
+        .menu-burger__input {
+          position: relative;
+          opacity: 0;
+        }
+        .menu-burger__label {
+          position: absolute;
+          left: 15px;
+          top: 42px;
+          width: 24px;
+          height: 16px;
+          z-index: 11;
+        }
+        .menu-burger__label::after,
+        .menu-burger__label::before,
+        .menu-burger__label span {
+          content: '';
+          right: 0;
+          transition: transform 0.3s;
+        }
+        .menu-burger__label::after {
+          top: 0;
+        }
+        .menu-burger__label::before {
+          bottom: 0;
+        }
+        .menu-burger__input:checked ~ .menu-burger__label span,
+        .menu-burger__input:checked ~ .menu-burger__label::before,
+        .menu-burger__input:checked ~ .menu-burger__label::after {
+          left: 0;
+        }
+        .menu-burger__input:checked + .menu-burger__label + .menu {
+          transform: translateX(0);
+        }
+        .menu__item {
+          padding-bottom: 15px;
+        }
+        .menu__item + .menu__item {
+          margin: 0;
+        }
+        .btn__link {
+          padding: 18px 24px;
+          line-height: 18px;
+        }
+        .main {
+          background: none;
+        }
+        .main__inner {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .main__item {
+          max-width: 500px;
+          align-items: center;
+          margin: 0 auto;
+        }
+        .main__title,
+        .main__subtitle,
+        .main__text {
+          text-align: center;
+        }
+        .main__btn-box {
+          padding-bottom: 50px;
+          width: 100%;
+        }
+        .main__graph-img {
+          display: flex;
+          align-items: center;
+        }
+        .main__graph-btn {
+          padding: 15px;
+        }
+        .main__appendix {
+          background-position: center;
+        }
+        .main__appendix-inner {
+          flex-direction: column;
+        }
+        .main__appendix-img {
+          transform: translateX(0px);
+        }
+        .main__appendix-box {
+          padding-top: 0;
+          padding-bottom: 150px;
+          transform: translateX(0px);
+          margin: 0 auto;
+          text-align: center;
+        }
+        .questions__inner {
+          flex-wrap: wrap;
+          gap: 0;
+        }
+        .questions__box {
+          width: 100%;
+        }
+      }
+      @media (max-width: 591px) {
+        h2 {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        .header__inner {
+          padding-left: 33px;
+        }
+        .menu-burger__label {
+          left: 0px;
+          top: 35px;
+          width: 19px;
+          height: 14px;
+        }
+        .logo__img {
+          width: 85px;
+        }
+        .btn__link {
+          padding: 12px 18px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .menu {
+          width: 100%;
+        }
+        .btn-box--mobile {
+          display: block;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 15px;
+        }
+        .main__title {
+          font-size: 34px;
+          line-height: 120%;
+        }
+        .main__subtitle {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .main__text {
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 20px;
+        }
+        .main__btn-box {
+          grid-template-columns: repeat(1, 1fr);
+          grid-row-gap: 18px;
+        }
+        .main-registration,
+        .account {
+          max-width: 100%;
+          width: 100%;
+          padding: 17px 0;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .main__dignity {
+          background-color: transparent;
+        }
+        .main__dignity-inner {
+          padding: 24px 16px 16px;
+          margin-bottom: 0;
+          border-bottom: none;
+          border-radius: 8px;
+          background-color: rgba(53, 58, 77, 0.8);
+        }
+        .main__dignity-item {
+          max-width: 100%;
+          text-align: center;
+          padding-bottom: 24px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .main__dignity-item:last-child {
+          border-bottom: none;
+        }
+        .main__dignity-img {
+          margin: 0 auto 28px;
+        }
+        .main__dignity-link {
+          display: none;
+        }
+        .main__graph-subtext {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 16px;
+        }
+        .main__graph-inner {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .main__graph-container {
+          margin-left: 0;
+          margin-top: 20px;
+          max-width: 262px;
+          min-height: 243px;
+          padding: 14px;
+        }
+        .graph-logo {
+          display: none;
+        }
+        .main__graph-title {
+          border-top: none;
+          margin-top: 0;
+          padding-top: 0;
+        }
+        .main__appendix-box {
+          padding-bottom: 94px;
+        }
+        .main__appendix-text {
+          font-size: 15px;
+          margin-bottom: 18px;
+        }
+        .main__appendix-link {
+          max-width: 230px;
+          padding: 15px 0 15px 40px;
+        }
+        .main__appendix-small {
+          margin-bottom: 5px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .main__appendix-big {
+          font-size: 18px;
+          line-height: 20px;
+        }
+        .main__appendix-link::before {
+          left: 15px;
+          width: 45px;
+          height: 45px;
+        }
+        .main__start-subtext {
+          font-size: 16px;
+          margin-top: -5px;
+        }
+        .main__start-inner {
+          justify-content: center;
+        }
+        .questions__item {
+          padding: 16px;
+        }
+        .questions__label {
+          font-size: 16px;
+        }
+        .comments__info {
+          flex-direction: column;
+          align-items: start;
+        }
+        .comments__name {
+          margin-bottom: 10px;
+        }
+        .comments__btn {
+          padding: 5px 30px;
+        }
+        .main__innovation {
+          padding: 68px 0 60px;
+        }
+        .main__innovation-inner img {
+          display: none;
+        }
+        .main__innovation-btn {
+          flex-wrap: wrap;
+        }
+        .main__innovation-link {
+          width: 240px;
+          height: 48px;
+          margin: 0 0 15px;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .footer-logo {
+          margin-bottom: 0;
+          width: 160px;
+        }
+        .footer-logo .logo__img {
+          width: 100%;
+        }
+        .footer__nav {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      @media (max-width: 370px) {
+        /* .header__btn-box {
+          display: none;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="https://quotex-bd.com">
+            <img class="logo__img" src="images/logo.svg" alt="logo" width="120" height="30" />
+          </a>
+          <input class="menu-burger__input" type="checkbox" id="burger" />
+          <label class="menu-burger__label" for="burger"><span></span></label>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="go">FAQ</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="go">About us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btn-box header__btn-box">
+            <a class="btn__link log-in" href="go">Log in</a>
+            <a class="btn__link registration" href="go">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__item">
+            <picture>
+              <source media="(min-width: 1000px)" srcset="images/platform810.webp" />
+              <source media="(min-width: 768px)" srcset="images/platform.webp" />
+              <img src="images/platform.webp" width="100%" height="100%" alt="image" />
+            </picture>
+          </div>
+          <div class="main__item">
+            <h1 class="main__title">Quotex Bangladesh</h1>
+            <h2 class="main__subtitle">Innovative platform for smart investments</h2>
+            <p class="main__text">Register and get $ 10,000 on a demo account for learning to trade</p>
+            <div class="btn-box main__btn-box">
+              <a class="btn__link main-registration" href="go">Registration</a>
+              <a class="btn__link account" href="go"> Open demo account </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main__dignity">
+      <div class="container">
+        <div class="main__dignity-inner">
+          <div class="main__dignity-item">
+            <img class="main__dignity-img" src="images/dignity-1.webp" alt="image" loading="lazy" />
+            <p class="main__dignity-title">Convenient trading interface</p>
+            <p class="main__dignity-text">
+              We created the most simple and comfortable interface that does not distract from the main thing - from trading
+            </p>
+          </div>
+          <div class="main__dignity-item">
+            <img class="main__dignity-img" src="images/dignity-2.webp" alt="image" loading="lazy" />
+            <p class="main__dignity-title">Integrated signals</p>
+            <p class="main__dignity-text">
+              Approach the strategy thoughtfully - the most precise and innovative signals with an accuracy of 87% will help you
+              create your own effective strategy
+            </p>
+          </div>
+          <div class="main__dignity-item">
+            <img class="main__dignity-img" src="images/dignity-3.webp" alt="image" loading="lazy" />
+            <p class="main__dignity-title">Trading indicators</p>
+            <p class="main__dignity-text">
+              We have gathered the most useful trading indicators. Use them to boost your account balance
+            </p>
+          </div>
+          <div class="main__dignity-item">
+            <img class="main__dignity-img" src="images/dignity-4.webp" alt="image" loading="lazy" />
+            <p class="main__dignity-title">Perfect speed</p>
+            <p class="main__dignity-text">Our platform runs on the most modern technology and delivers incredible speed</p>
+          </div>
+        </div>
+        <a class="main__dignity-link" href="go">
+          Try playing on a demo account
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle opacity="0.3" cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#FFFFFF"></circle>
+            <g clip-path="url(#clip0)" fill="none">
+              <path
+                d="M12.5497 7.20296L12.1565 7.59604C12.0329 7.71945 11.9645 7.88443 11.9645 8.06004C11.9645 8.23584 12.0329 8.41574 12.1565 8.53916L14.6827 11.0805L6.65668 11.0805C6.29473 11.0805 6 11.3447 6 11.7066L6 12.2628C6 12.6245 6.29473 12.9555 6.65668 12.9555L14.7113 12.9555L12.1565 15.4918C12.0329 15.6155 11.9645 15.771 11.9645 15.9468C11.9645 16.1224 12.0329 16.2828 12.1565 16.4063L12.5497 16.7972C12.8056 17.053 13.2219 17.0519 13.4778 16.7961L17.8084 12.465C17.9317 12.3417 18 12.1762 18 11.9992L18 11.9973C18 11.8216 17.9317 11.6565 17.8084 11.5332L13.4779 7.20296C13.222 6.94696 12.8056 6.94696 12.5497 7.20296Z"
+                fill="#FFFFFF"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="12" height="12" fill="white" transform="translate(6 18) rotate(-90)"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="main__graph">
+      <div class="container">
+        <h2>
+          To make more money, <br />
+          make the correct prognosis
+        </h2>
+        <p class="main__graph-subtext">Will the price go Up or Down?</p>
+        <div class="main__graph-inner">
+          <div class="main__graph-img">
+            <img src="images/graph.svg" alt="images graph" loading="lazy" />
+          </div>
+          <div class="main__graph-container">
+            <img class="graph-logo" src="images/graph-logo.svg" alt="graph logo" loading="lazy" />
+            <p class="main__graph-title">Click</p>
+            <p class="main__graph-text">on one of the buttons and see the result</p>
+            <a class="main__graph-btn main__graph-btn--green" href="go"
+              >Price will go up
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle opacity="0.3" cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#FFFFFF"></circle>
+                <g clip-path="url(#clip0)" fill="none">
+                  <path
+                    d="M12.5497 7.20296L12.1565 7.59604C12.0329 7.71945 11.9645 7.88443 11.9645 8.06004C11.9645 8.23584 12.0329 8.41574 12.1565 8.53916L14.6827 11.0805L6.65668 11.0805C6.29473 11.0805 6 11.3447 6 11.7066L6 12.2628C6 12.6245 6.29473 12.9555 6.65668 12.9555L14.7113 12.9555L12.1565 15.4918C12.0329 15.6155 11.9645 15.771 11.9645 15.9468C11.9645 16.1224 12.0329 16.2828 12.1565 16.4063L12.5497 16.7972C12.8056 17.053 13.2219 17.0519 13.4778 16.7961L17.8084 12.465C17.9317 12.3417 18 12.1762 18 11.9992L18 11.9973C18 11.8216 17.9317 11.6565 17.8084 11.5332L13.4779 7.20296C13.222 6.94696 12.8056 6.94696 12.5497 7.20296Z"
+                    fill="#FFFFFF"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="12" height="12" fill="white" transform="translate(6 18) rotate(-90)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="main__graph-btn main__graph-btn--red" href="go"
+              >Price will go down
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle opacity="0.3" cx="12" cy="12" r="12" transform="rotate(-90 12 12)" fill="#FFFFFF"></circle>
+                <g clip-path="url(#clip0)" fill="none">
+                  <path
+                    d="M12.5497 7.20296L12.1565 7.59604C12.0329 7.71945 11.9645 7.88443 11.9645 8.06004C11.9645 8.23584 12.0329 8.41574 12.1565 8.53916L14.6827 11.0805L6.65668 11.0805C6.29473 11.0805 6 11.3447 6 11.7066L6 12.2628C6 12.6245 6.29473 12.9555 6.65668 12.9555L14.7113 12.9555L12.1565 15.4918C12.0329 15.6155 11.9645 15.771 11.9645 15.9468C11.9645 16.1224 12.0329 16.2828 12.1565 16.4063L12.5497 16.7972C12.8056 17.053 13.2219 17.0519 13.4778 16.7961L17.8084 12.465C17.9317 12.3417 18 12.1762 18 11.9992L18 11.9973C18 11.8216 17.9317 11.6565 17.8084 11.5332L13.4779 7.20296C13.222 6.94696 12.8056 6.94696 12.5497 7.20296Z"
+                    fill="#FFFFFF"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="12" height="12" fill="white" transform="translate(6 18) rotate(-90)"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main__appendix">
+      <div class="container">
+        <div class="main__appendix-inner">
+          <div class="main__appendix-img">
+            <img src="images/appendix-tab.webp" alt="image" loading="lazy" />
+          </div>
+          <div class="main__appendix-box">
+            <h2>Mobile application is always ready to hand</h2>
+            <p class="main__appendix-text">Download our user-friendly application for iPhone or Android and start trading!</p>
+            <a class="main__appendix-link" href="go">
+              <p class="main__appendix-small">Available on</p>
+              <p class="main__appendix-big">Google Play</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="main__start">
+      <div class="container">
+        <h2>Start trading</h2>
+        <p class="main__start-subtext">3 steps</p>
+        <div class="main__start-inner">
+          <div class="main__start-item">
+            <img class="main__start-img" src="images/start-trading-1.webp" width="121" height="124" alt="image" loading="lazy" />
+            <p class="main__start-title">Sign up</p>
+            <p class="main__start-text">Open an account for free in just a few minutes</p>
+            <a class="main__start-link" href="go">Trade on a demo account in 1 click</a>
+          </div>
+          <div class="main__start-item">
+            <img class="main__start-img" src="images/start-trading-2.webp" width="134" height="124" alt="image" loading="lazy" />
+            <p class="main__start-title">Practice</p>
+            <p class="main__start-text">Get your skills better with a demo account and training materials</p>
+            <a class="main__start-link" href="go">Start training with demo account</a>
+          </div>
+          <div class="main__start-item">
+            <img class="main__start-img" src="images/start-trading-3.webp" width="151" height="124" alt="image" loading="lazy" />
+            <p class="main__start-title">Deposit and trade</p>
+            <p class="main__start-text">Over 410 instruments and a minimum deposit of $5 for optimal trading</p>
+            <a class="main__start-link" href="go">Go to Deposit option</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <h2>Frequently asked questions</h2>
+        <div class="questions__inner">
+          <div class="questions__box">
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-1" />
+              <label class="questions__label" for="question-1">
+                <img src="images/svgexport-21.svg" alt="icon" loading="lazy" />
+                How to learn?
+              </label>
+              <div class="questions__content">
+                Sign up and train on a demo account. It is exactly the same as real trading, but for free.
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-2" />
+              <label class="questions__label" for="question-2">
+                <img src="images/svgexport-21.svg" alt="icon" loading="lazy" />
+                Can I trade with the phone?
+              </label>
+              <div class="questions__content">
+                Our platform runs on the most modern technology and opens in the browser of any computer or mobile phone
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-3" />
+              <label class="questions__label" for="question-3">
+                <img src="images/svgexport-21.svg" alt="icon" loading="lazy" />
+                How long does it take to withdraw funds?
+              </label>
+              <div class="questions__content">
+                On average, the withdrawal procedure takes from one to five days from the date of receipt of the corresponding
+                request of the Client and depends only on the volume of simultaneously processed requests. The company always
+                tries to make payments directly on the day the request is received from the Client.
+              </div>
+            </div>
+          </div>
+          <div class="questions__box">
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-4" />
+              <label class="questions__label" for="question-4">
+                <img src="images/svgexport-21.svg" alt="icon" loading="lazy" />
+                What is the minimum deposit amount?
+              </label>
+              <div class="questions__content">
+                The advantage of the Company’s trading platform is that you don’t have to deposit large amounts to your account.
+                You can start trading by investing a small amount of money. The minimum deposit is 10 US dollars.
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-5" />
+              <label class="questions__label" for="question-5">
+                <img src="images/svgexport-21.svg" alt="icon" loading="lazy" />
+                What is a trading platform and why is it needed?
+              </label>
+              <div class="questions__content">
+                Trading platform - a software complex that allows the Client to conduct trades (operations) using different
+                financial instruments. It has also accesses to various information such as the value of quotations, real-time
+                market positions, actions of the Company, etc.
+              </div>
+            </div>
+            <div class="questions__item">
+              <input class="questions__input" type="checkbox" id="question-6" />
+              <label class="questions__label" for="question-6">
+                <img src="images/svgexport-21.svg" alt="icon" loading="lazy" />
+
+                Is there any fee for depositing or withdrawing funds from the account?
+              </label>
+              <div class="questions__content">
+                No. The company does not charge any fee for either the deposit or for the withdrawal operations. However, it is
+                worth considering that payment systems can charge their fee and use the internal currency conversion rate.
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="main__questions-btn" href="go">
+          <svg
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.8438 1.53564C7.79166 1.53564 3.6875 5.52254 3.6875 10.4303C3.6875 15.338 7.79166 19.3249 12.8438 19.3249H13.3824V22.4642C18.6176 20.0156 22 15.1392 22 10.4303C22 5.52254 17.8958 1.53564 12.8438 1.53564ZM11.633 12.6668H13.1379V12.5697C13.159 11.3941 13.5062 11.1743 14.4008 10.6376C15.3426 10.0855 15.9214 9.30855 15.9214 8.15846C15.9214 6.49721 14.627 5.37267 12.6959 5.37267C10.9227 5.37267 9.50195 6.37964 9.43355 8.2198H11.0332C11.0963 7.13615 11.8908 6.66078 12.6959 6.66078C13.5904 6.66078 14.3166 7.23838 14.3166 8.14312C14.3166 8.90474 13.8272 9.44145 13.201 9.81971C12.2223 10.4024 11.633 11.0275 11.633 12.5697V12.6668ZM12.4277 15.6374C13.0013 15.6374 13.4801 15.1825 13.4801 14.6151C13.4801 14.058 13.0013 13.5979 12.4277 13.5979C11.8489 13.5979 11.3753 14.058 11.3753 14.6151C11.3753 15.1825 11.8489 15.6374 12.4277 15.6374Z"
+              fill="#FFFFFF"
+            ></path>
+          </svg>
+          Go to all questions
+        </a>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__inner">
+          <h2>Trader reviews</h2>
+          <div class="comments__item">
+            <div class="comments__info">
+              <p class="comments__name">Oliver 17.08.2023</p>
+              <span class="comments__star">
+                <span class="comments__star--yelov" style="width: 100%; background-image: url('images/fullrating.svg')"></span>
+              </span>
+            </div>
+            <p class="comments__text">
+              I am very happy with the betting site. It works very fast. It took me 2 years to register with Nine Casino Minutes.
+              I recommend everyone to play here.
+            </p>
+            <a class="comments__btn" href="#">Answer</a>
+          </div>
+          <div class="comments__item">
+            <div class="comments__info">
+              <p class="comments__name">Jack 16.08.2023</p>
+              <span class="comments__star">
+                <span class="comments__star--yelov" style="width: 80%; background-image: url('images/fullrating.svg')"></span>
+              </span>
+            </div>
+            <p class="comments__text">
+              A good casino site, I am always on the lookout for new offers on the Brazilian market. This is a very worthy offer,
+              very good impressions.
+            </p>
+            <a class="comments__btn" href="#">Answer</a>
+          </div>
+          <div class="comments__item">
+            <div class="comments__info">
+              <p class="comments__name">Harry 15.08.2023</p>
+              <span class="comments__star">
+                <span class="comments__star--yelov" style="width: 100%; background-image: url('images/fullrating.svg')"></span>
+              </span>
+            </div>
+            <p class="comments__text">
+              I think this site is worth a look. The design of Nine Casino is beautiful and clear. All methods popular payment
+              methods are available. There are good guys from real players.
+            </p>
+            <a class="comments__btn" href="#">Answer</a>
+          </div>
+          <div class="comments__item">
+            <div class="comments__info">
+              <p class="comments__name">Jacob 14.08.2023</p>
+              <span class="comments__star">
+                <span class="comments__star--yelov" style="width: 90%; background-image: url('images/fullrating.svg')"></span>
+              </span>
+            </div>
+            <p class="comments__text">
+              Nice bonuses, beautiful design, fast payments and professional support service! I was surprised! They can try to do
+              it!
+            </p>
+            <a class="comments__btn" href="#">Answer</a>
+          </div>
+          <div class="comments__item">
+            <div class="comments__info">
+              <p class="comments__name">Amelia 13.08.2023</p>
+              <span class="comments__star">
+                <span class="comments__star--yelov" style="width: 100%; background-image: url('images/fullrating.svg')"></span>
+              </span>
+            </div>
+            <p class="comments__text">
+              This is a cool website. Nine casinos give only positive emotions. Transactions are executed without delay. There are
+              lots of games of different genres. Excellent bonus policy. Polite technical support.
+            </p>
+            <a class="comments__btn" href="#">Answer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__innovation">
+      <div class="container">
+        <div class="main__innovation-inner">
+          <img src="images/about-us-innovation.webp" alt="image" width="100%" height="100%" loading="lazy" />
+          <h2>
+            Quotex: Innovation Platform <br />
+            Digital Asset Trading
+          </h2>
+          <div class="main__innovation-btn">
+            <a class="main__innovation-link main__innovation-real" href="go">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.119244 13.2959L0.638568 13.301C0.942373 13.3039 1.23105 13.1686 1.42312 12.9332L4.52519 9.13133C5.00616 8.54184 5.94312 8.68406 6.22751 9.38972L8.56812 15.1975C8.91985 16.0703 10.1726 16.0184 10.4509 15.1195L13.7379 4.5027C13.9688 3.757 14.9269 3.55157 15.4432 4.13706L18.4078 7.49889C18.792 7.93463 19.4655 7.95233 19.8721 7.53739L23.6192 3.7134M-0.280762 21.3057C0.119238 21.3057 17.9526 21.3057 24.6192 21.3057"
+                  stroke="#FFFFFF"
+                  stroke-width="2.7px"
+                  fill="none"
+                ></path>
+              </svg>
+              Open real account
+            </a>
+            <a class="main__innovation-link main__innovation-demo" href="go">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.4271 13.4714L16.7916 8.90616C16.9217 8.8617 17.0623 8.85798 17.1946 8.89548L30.2759 12.6029C30.9069 12.7818 30.9395 13.6641 30.3233 13.8889L17.2009 18.6775C17.0649 18.7271 16.9165 18.7318 16.7776 18.6908L3.45435 14.7601C2.82191 14.5735 2.80312 13.6846 3.4271 13.4714Z"
+                  stroke="#3690F2"
+                  stroke-width="2.70521px"
+                  fill="none"
+                ></path>
+                <path
+                  d="M8.36377 16.2461V22.665C8.36377 24.355 9.73378 25.725 11.4238 25.725H22.2772C23.9672 25.725 25.3372 24.355 25.3372 22.665V16.2461"
+                  stroke="#3690F2"
+                  stroke-width="2.70521px"
+                  fill="none"
+                ></path>
+                <path d="M30.7695 13.2266L30.7695 20.987" stroke="#3690F2" stroke-width="2.70521px" fill="none"></path>
+              </svg>
+              Demo account
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <a class="footer-logo" href="https://quotex-bd.com">
+              <img class="logo__img" src="images/logo.svg" alt="logo" width="150" height="30" loading="lazy" />
+            </a>
+            <nav class="footer__nav">
+              <div class="footer__nav-item">
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a a class="footer__list-link" href="#">Affiliates</a></li>
+                  <li class="footer__list-item"><a a class="footer__list-link" href="#">Sign up</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-item">
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a a class="footer__list-link" href="#">About us</a></li>
+                  <li class="footer__list-item"><a a class="footer__list-link" href="#">Contacts</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-item">
+                <ul class="footer__list">
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">FAQ</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">General questions</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Financial questions</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Verification</a></li>
+                </ul>
+              </div>
+              <div class="footer__nav-item">
+                <ul class="footer__list">
+                  <li class="footer__list-item"><p class="footer__list-link">Regulations</p></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Privacy policy</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Payment policy</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Service agreement</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Risk disclosure</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Rules of trading operations</a></li>
+                  <li class="footer__list-item"><a class="footer__list-link" href="#">Non-trading operations regulations </a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="footer__bottom">
+            <p class="footer__text">
+              Maxbit LLC. Address: First Floor, First St Vincent Bank LTD Building, James Street, Kingstown, St. Vincent and
+              Grenadines.
+            </p>
+            <p class="footer__text">
+              The website services are not available in a number of countries, including USA, Canada, Hong Kong, EEA countries,
+              Russia as well as for persons under 18 years of age.
+            </p>
+            <p class="footer__text">
+              Risk Warning: Trading Forex and Leveraged Financial Instruments involves significant risk and can result in the loss
+              of your invested capital. You should not invest more than you can afford to lose and should ensure that you fully
+              understand the risks involved. Trading leveraged products may not be suitable for all investors. Trading
+              non-leveraged products such as stocks also involves risk as the value of a stock can fall as well as rise, which
+              could mean getting back less than you originally put in. Past performance is no guarantee of future results. Before
+              trading, please take into consideration your level of experience, investment objectives and seek independent
+              financial advice if necessary. It is the responsibility of the Client to ascertain whether he/she is permitted to
+              use the services of the Quotex brand based on the legal requirements in his/her country of residence.
+            </p>
+            <div class="footer__copyright">
+              <span>Maxbit LLC is the owner of the qxbroker.com domain.</span> <br />
+              <span>Copyright © 2023 Quotex. All rights reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
